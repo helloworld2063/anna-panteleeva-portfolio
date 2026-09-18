@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Кейс Анны Пантелеевой: редизайн B2B e-commerce сайта промышленных станков Интервесп." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Редизайн сайта Интервесп — Пантелеева Анна</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./redesign.css" />
+  </head>
+  <body>
+    <main class="redesign-page">
+      <header class="redesign-hero">
+        <h1>Редизайн B2B e-commerce сайта по&nbsp;продаже промышленных станков</h1>
+        <div class="compare compare--case" style="--compare-aspect: 2.35" data-compare data-before="./assets/before.jpg" data-after="./assets/after.png" data-subject="карточку товара"></div>
+        <div class="redesign-meta">
+          <div><span>Платформа</span><p>Web / Mobile</p></div>
+          <div><span>Роль</span><p>UX/UI дизайнер</p></div>
+          <div><span>Сфера</span><p>B2B, промышленное оборудование</p></div>
+        </div>
+        <div class="redesign-intro">
+          <p>Задача — сделать внешний вид сайта более современным и&nbsp;повысить конверсию в&nbsp;заявку.</p>
+          <p>Я&nbsp;переработала ключевые страницы B2B e-commerce сайта. На&nbsp;основе данных Яндекс Метрики убрала неиспользуемые элементы, усилила CTA, добавила навигацию по&nbsp;разделам и&nbsp;sticky-header. Основной фокус — упростить выбор промышленных станков и&nbsp;повысить доступность заявки/покупки.</p>
+        </div>
+      </header>
+
+      <section class="redesign-section" aria-labelledby="problems-title">
+        <h2 id="problems-title">Проблемы исходного интерфейса</h2>
+        <ol class="redesign-list">
+          <li>В&nbsp;карточке товара цена и&nbsp;CTA терялись при&nbsp;скролле.</li>
+          <li>В&nbsp;листинге карточки были перегружены информацией.</li>
+          <li>Переключатели вида каталога почти не&nbsp;использовались.</li>
+          <li>Пользователям было сложно быстро перейти в&nbsp;соседний раздел.</li>
+          <li>Хедер исчезал при&nbsp;скролле, из-за чего навигация была недоступна.</li>
+          <li>Визуальный стиль выглядел устаревшим и&nbsp;снижал доверие.</li>
+        </ol>
+      </section>
+
+      <section class="redesign-section" aria-labelledby="scenarios-title">
+        <h2 id="scenarios-title">Пользовательские сценарии</h2>
+        <div class="scenario-grid">
+          <article><h3>Сценарий 1: пользователь пришёл из&nbsp;рекламы на&nbsp;карточку товара.</h3><p>Его задача: понять цену, характеристики, наличие и&nbsp;оставить заявку.</p></article>
+          <article><h3>Сценарий 2: пользователь в&nbsp;каталоге сравнивает несколько моделей.</h3><p>Его задача: быстро отфильтровать станки, сравнить параметры и&nbsp;перейти в&nbsp;карточку.</p></article>
+          <article><h3>Сценарий 3: пользователь не&nbsp;знает точную модель.</h3><p>Его задача: перейти в&nbsp;нужный раздел и&nbsp;сузить выбор.</p></article>
+        </div>
+      </section>
+
+      <section class="redesign-section research" aria-labelledby="research-title">
+        <h2 id="research-title">Исследования</h2>
+        <div class="redesign-subsection">
+          <h3>Аналитика</h3>
+          <ol class="redesign-list">
+            <li>Пользователи не&nbsp;взаимодействовали с&nbsp;переключателями вида в&nbsp;листинге.</li>
+            <li>Основное внимание приходилось на&nbsp;карточки товара и&nbsp;фильтры.</li>
+            <li>Часть CTA была ниже зоны видимости.</li>
+            <li>Пользователи возвращались наверх страницы для&nbsp;перехода в&nbsp;другие разделы, так как хедер не&nbsp;был закреплён вверху страницы при&nbsp;скролле.</li>
+          </ol>
+          <img class="research-image" src="./assets/redesign/analytics.jpg" alt="Анализ карты кликов: переключатели вида каталога почти не используются" loading="lazy" />
+        </div>
+        <div class="redesign-subsection">
+          <h3>Конкуренты</h3>
+          <ol class="redesign-list">
+            <li>У&nbsp;конкурентов активнее используются крупные фото товара.</li>
+            <li>Цена и&nbsp;CTA в&nbsp;карточке товара вынесены в&nbsp;отдельный блок.</li>
+            <li>Есть быстрый доступ к&nbsp;категориям в&nbsp;листинге.</li>
+            <li>Карточки в&nbsp;листинге проще и&nbsp;легче сканируются.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="redesign-section solutions" aria-labelledby="solutions-title">
+        <h2 id="solutions-title">Ключевые UX-решения</h2>
+        <p class="section-lead">Я&nbsp;не сильно меняла UI сайта, потому что ЦА довольно консервативная. Упор делался на&nbsp;редизайн карточки товара и&nbsp;листинга, так как туда обычно ведет реклама из&nbsp;рекламной сети Яндекса.</p>
+        <article class="solution">
+          <h3>Разместить цену и&nbsp;основные CTA в&nbsp;правом блоке карточки товара и&nbsp;закрепить при&nbsp;скролле страницы</h3>
+          <p>Пользователь сможет быстрее перейти к&nbsp;покупке или&nbsp;заявке, не&nbsp;возвращаясь вверх страницы. Это должно снизить трение на&nbsp;этапе принятия решения. Лизинг оставлен как вторичный аргумент покупки.</p>
+          <div class="compare compare--case" style="--compare-aspect: 2.35" data-compare data-before="./assets/before.jpg" data-after="./assets/after.png" data-subject="карточку товара"></div>
+        </article>
+        <article class="solution">
+          <h3>Разделы каталога вынести над&nbsp;листингом и&nbsp;убрать неиспользуемые переключатели вида.</h3>
+          <p>Разделы каталога, вынесенные отдельными кнопками, ускорят поиск нужного оборудования. Раньше можно было выбирать варианты отображения каталога в&nbsp;листинге, но&nbsp;мы это убрали, так как данная функция, судя по&nbsp;Яндекс Метрике, не&nbsp;пользовалась спросом и&nbsp;работала не&nbsp;совсем корректно.</p>
+          <div class="compare compare--case" style="--compare-aspect: 1.92" data-compare data-before="./assets/redesign/listing-before.jpg" data-after="./assets/redesign/listing-after.png" data-subject="листинг каталога"></div>
+        </article>
+        <article class="solution">
+          <h3>Упрощение карточек товара в&nbsp;листинге</h3>
+          <p>Карточки были перегружены деталями и&nbsp;радиокнопками. Я&nbsp;оставила ключевые характеристики, цену, лизинг и&nbsp;основные CTA, чтобы карточки быстрее сканировались.</p>
+          <div class="compare compare--case" style="--compare-aspect: 1.92" data-compare data-before="./assets/redesign/listing-card-before.png" data-after="./assets/redesign/listing-card-after.png" data-subject="карточки товаров в листинге"></div>
+        </article>
+        <article class="solution">
+          <h3>Sticky-хэдер</h3>
+          <p>Была переделана шапка сайта. Теперь она всегда видна на&nbsp;экране, чтобы пользователь в&nbsp;любой момент мог перейти в&nbsp;другой раздел сайта, не&nbsp;проматывая страницу наверх.</p>
+          <video class="header-video" src="./assets/redesign/header.mov" muted autoplay loop playsinline preload="metadata" aria-label="Демонстрация закреплённого хедера"></video>
+          <p class="media-caption">Новый хедер всегда виден на&nbsp;странице и&nbsp;уменьшается, когда пользователь спустился вниз по&nbsp;странице.</p>
+        </article>
+      </section>
+
+      <section class="redesign-section" aria-labelledby="adaptive-title">
+        <h2 id="adaptive-title">Адаптивы</h2>
+        <div class="adaptive-grid">
+          <video src="./assets/redesign/listing-mobile.mov" muted autoplay loop playsinline preload="metadata" aria-label="Мобильная версия листинга"></video>
+          <video src="./assets/redesign/card-mobile.mov" muted autoplay loop playsinline preload="metadata" aria-label="Мобильная версия карточки товара"></video>
+        </div>
+      </section>
+
+      <section class="redesign-section other-pages" aria-labelledby="other-pages-title">
+        <h2 id="other-pages-title">Остальные страницы</h2>
+        <p class="section-lead">Упор делался на&nbsp;карточку товара и&nbsp;листинг, но&nbsp;помимо этого я&nbsp;сделала UI-kit для&nbsp;всего сайта и&nbsp;обновила и&nbsp;другие страницы.</p>
+        <div class="redesign-subsection">
+          <h3>Главная</h3>
+          <div class="compare compare--case" style="--compare-aspect: 1.49" data-compare data-before="./assets/redesign/home-before.jpg" data-after="./assets/redesign/home-after.jpg" data-subject="главную страницу"></div>
+        </div>
+        <div class="redesign-subsection">
+          <h3>Новости</h3>
+          <div class="compare compare--case" style="--compare-aspect: 2.8" data-compare data-before="./assets/redesign/news-before.png" data-after="./assets/redesign/news-after.png" data-subject="страницу новостей"></div>
+        </div>
+      </section>
+
+      <section class="redesign-section result" aria-labelledby="result-title">
+        <h2 id="result-title">Результат</h2>
+        <div class="redesign-subsection">
+          <h3>Что изменилось</h3>
+          <ol class="redesign-list">
+            <li>Переработана карточка товара.</li>
+            <li>Переработан листинг.</li>
+            <li>Удалены неиспользуемые элементы.</li>
+            <li>Добавлены быстрые категории.</li>
+            <li>Добавлен sticky-header.</li>
+            <li>Усилены CTA.</li>
+            <li>Интерфейс приведён к&nbsp;более современному визуальному стилю.</li>
+          </ol>
+        </div>
+        <div class="redesign-subsection">
+          <h3>Метрики, которые я&nbsp;бы отслеживала</h3>
+          <p>Если бы была возможность, я&nbsp;бы отслеживала CTR по&nbsp;CTA, конверсию в&nbsp;заявку, глубину просмотра карточки и&nbsp;взаимодействие с&nbsp;категориями.</p>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.projects-page .projects-hero-image,
+.projects-page .projects-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ebebeb;
+  border-radius: 24px;
+}
+
+.projects-page .projects-meta {
+  grid-template-columns: 120px 150px minmax(190px, 1fr) minmax(160px, 1fr);
+  gap: 22px;
+}
+
+.projects-page .projects-intro { margin-top: 32px; }
+.projects-page .projects-scenarios { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.projects-page .projects-scenarios article { min-height: 0; }
+.projects-page .projects-scenarios h3 { margin-bottom: 12px; }
+.projects-page .projects-scenarios p { margin: 0; }
+.projects-page .projects-bullets { padding-left: 0; margin: 12px 0 0; list-style: none; }
+.projects-page .projects-bullets li { margin: 6px 0; }
+.projects-page .projects-bullets li::before { content: '– '; }
+.projects-page .projects-figure { margin-top: 28px; }
+.projects-page .projects-mobile-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 24px; margin-top: 28px; }
+.projects-page .projects-mobile-pair img { width: 100%; height: auto; }
+.projects-page .projects-mobile-last { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 54%); align-items: center; gap: 24px; margin: 36px 0 0; }
+.projects-page .projects-mobile-last figcaption { font-size: 18px; line-height: 1.5; }
+.projects-page .projects-mobile-last img { width: 100%; height: auto; }
+.projects-page .projects-result-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
+.projects-page .projects-result-grid article { padding: 24px; border-radius: 14px; background: #f4f4f4; }
+.projects-page .projects-result-grid h3 { font-size: 19px; letter-spacing: -0.02em; }
+.projects-page .projects-result-grid ul { padding-left: 20px; margin-bottom: 0; }
+.projects-page .projects-conclusion { margin-top: 40px; }
+.projects-page .projects-conclusion h3 { margin-top: 20px; }
+.projects-page .projects-conclusion ol { padding-left: 22px; }
+.projects-page .projects-conclusion li { margin-top: 6px; }
+
+@media (max-width: 700px) {
+  .projects-page .projects-hero-image,
+  .projects-page .projects-figure { border-radius: 16px; }
+  .projects-page .projects-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .projects-page .projects-intro { margin-top: 28px; }
+  .projects-page .projects-scenarios { grid-template-columns: 1fr; }
+  .projects-page .projects-mobile-pair { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .projects-page .projects-mobile-last { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: 28px; }
+  .projects-page .projects-mobile-last figcaption { font-size: 16px; }
+  .projects-page .projects-result-grid { grid-template-columns: 1fr; gap: 12px; }
+}
