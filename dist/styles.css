@@ -342,20 +342,19 @@ p {
   align-self: start;
 }
 
-.experience-role {
+.experience-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 8px;
-  color: var(--ink);
-  font-size: clamp(1.5rem, 1.8vw, 1.875rem);
-  line-height: 1.2;
+  color: var(--muted);
+  font-size: clamp(1.15rem, 1.35vw, 1.35rem);
+  line-height: 1.35;
 }
 
-.experience-role .company,
-.experience-role .experience-separator {
-  color: var(--muted);
-  font-weight: 400;
+.experience-meta .company {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .experience ul {
@@ -519,10 +518,6 @@ p {
 
   .experience-title {
     margin-top: 18px;
-  }
-
-  .experience-role {
-    font-size: clamp(1.45rem, 5.8vw, 1.8rem);
   }
 
   .experience ul {
