@@ -5,13 +5,19 @@ document.querySelectorAll('[data-before][data-after]').forEach((comparison) => {
   const beforeImage = document.createElement('img');
   beforeImage.className = 'compare-image compare-image--before';
   beforeImage.src = before;
+  if (comparison.dataset.beforeSrcset) beforeImage.srcset = comparison.dataset.beforeSrcset;
+  beforeImage.sizes = '(max-width: 720px) calc(100vw - 40px), min(100vw - 80px, 1280px)';
   beforeImage.alt = `${subject}: до редизайна`;
   beforeImage.loading = 'lazy';
+  beforeImage.decoding = 'async';
   const afterImage = document.createElement('img');
   afterImage.className = 'compare-image';
   afterImage.src = after;
+  if (comparison.dataset.afterSrcset) afterImage.srcset = comparison.dataset.afterSrcset;
+  afterImage.sizes = '(max-width: 720px) calc(100vw - 40px), min(100vw - 80px, 1280px)';
   afterImage.alt = '';
   afterImage.loading = 'lazy';
+  afterImage.decoding = 'async';
   const afterLayer = document.createElement('div');
   afterLayer.className = 'compare-after';
   afterLayer.setAttribute('aria-hidden', 'true');
@@ -52,17 +58,23 @@ document.querySelectorAll('[data-compare]').forEach((comparison) => {
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const videos = [...document.querySelectorAll('video')];
+const enableVideoControls = (video) => {
+  video.controls = true;
+  video.preload = 'metadata';
+};
+
+videos.forEach((video) => video.addEventListener('error', () => enableVideoControls(video)));
 
 if (reducedMotion) {
   videos.forEach((video) => {
     video.autoplay = false;
-    video.controls = true;
+    enableVideoControls(video);
   });
 } else if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.play().catch(() => {});
+        if (entry.isIntersecting) entry.target.play().catch(() => enableVideoControls(entry.target));
         else entry.target.pause();
       });
     },

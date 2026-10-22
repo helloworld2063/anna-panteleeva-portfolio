@@ -12,7 +12,7 @@
   <body>
     <main>
       <header class="hero shell" aria-labelledby="page-title">
-        <img class="portrait" src="./assets/portrait.jpg" alt="Портрет Анны Пантелеевой" />
+        <img class="portrait" src="./assets/portrait-640.jpg" alt="Портрет Анны Пантелеевой" width="640" height="640" fetchpriority="high" decoding="async" />
         <div class="hero-copy">
           <p class="eyebrow hero-role">Product Designer</p>
           <h1 id="page-title">Пантелеева Анна</h1>
@@ -43,9 +43,9 @@
         <div class="compare" style="--position: 50%" data-compare>
           <div class="compare-canvas">
             <div class="compare-visual">
-              <img class="compare-image compare-image--before" src="./assets/before.jpg" alt="Карточка товара до редизайна" />
+              <img class="compare-image compare-image--before" src="./assets/before-960.jpg" srcset="./assets/before-960.jpg 960w, ./assets/before-1600.jpg 1600w, ./assets/before.jpg 3168w" sizes="(max-width: 720px) calc(100vw - 64px), 50vw" alt="Карточка товара до редизайна" loading="lazy" decoding="async" />
               <div class="compare-after" aria-hidden="true">
-                <img class="compare-image" src="./assets/after.png" alt="" />
+                <img class="compare-image" src="./assets/after-960.png" srcset="./assets/after-960.png 960w, ./assets/after-1600.png 1600w, ./assets/after.png 1920w" sizes="(max-width: 720px) calc(100vw - 64px), 50vw" alt="" loading="lazy" decoding="async" />
               </div>
             </div>
             <span class="compare-label compare-label--before">До</span>
@@ -77,15 +77,15 @@
         </div>
 
         <div class="project-cover">
-          <img src="./assets/project-cover.png" alt="Дизайн каталога реализованных проектов для desktop и mobile" />
+          <img src="./assets/project-cover-960.png" srcset="./assets/project-cover-960.png 960w, ./assets/project-cover-1600.png 1600w, ./assets/project-cover.png 2741w" sizes="(max-width: 720px) calc(100vw - 40px), 50vw" alt="Дизайн каталога реализованных проектов для desktop и mobile" loading="lazy" decoding="async" />
         </div>
       </section>
 
       <section class="concepts shell" aria-labelledby="concepts-title">
         <h2 id="concepts-title">Концепты</h2>
         <div class="concept-grid">
-          <video src="./assets/concept-1.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Концепт интерфейса 1"></video>
-          <video src="./assets/concept-2.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Концепт интерфейса 2"></video>
+          <video src="./assets/concept-1.mp4" muted loop playsinline preload="metadata" aria-label="Концепт интерфейса 1"></video>
+          <video src="./assets/concept-2.mp4" muted loop playsinline preload="metadata" aria-label="Концепт интерфейса 2"></video>
         </div>
       </section>
 

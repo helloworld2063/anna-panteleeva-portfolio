@@ -81,6 +81,7 @@ p {
 
 .portrait {
   width: 228px;
+  height: auto;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
